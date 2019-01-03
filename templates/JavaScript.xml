@@ -1,5 +1,5 @@
 <templateSet group="JavaScript">
-  <template name="dlog" value="console.log('\n\n\n\n\n', $data$);$END$" description="Debug log" toReformat="false" toShortenFQNames="true">
+  <template name="dlog" value="console.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n', $data$);$END$" description="Debug log" toReformat="false" toShortenFQNames="true">
     <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -28,5 +28,11 @@
     <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="functionParam" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="functionBody" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="me" value="module.exports = {&#10;  $data$&#10;};&#10;$END$" description="Module exports" toReformat="false" toShortenFQNames="true">
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
   </template>
 </templateSet>
